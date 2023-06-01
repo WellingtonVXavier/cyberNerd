@@ -1,2 +1,2 @@
 # mobile-first
- novo projeto mobole
+ Novo proojeto mobile
