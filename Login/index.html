@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
-</head>
-<body>
-    <html>
-<!-- <head>
-  <span >Tela de Login</span>
-</head> -->
-<body>
-  <h1 class="descricao_titulo">Login</h1>
-  <form>
-    <label for="username" class="descricao_titulo_login">Nome de usuário:</label>
-    <input type="text" class="card" id="username" name="username" required><br><br>
-    
-    <label for="password"  class="descricao_titulo_login">Senha:</label>
-    <input type="password" class="card" id="password" name="password" required><br><br>
-    
-    <input type="submit" class="card_botoes" value="Entrar">
-  </form>
-  
-  <p class="botoes_ancora"><a href="cadastrar.html">Cadastro</a></p>
-</body>
-</html>
 
-    <script src="./manis.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../TelaPrincipal/reset.css">
+  <link rel="stylesheet" href="../Login/styles/login.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <html>
+    
+    <body>
+      <h1 class="descricao_titulo">Login</h1>
+      
+      <section class="card">
+        <form id="teste">
+          <label for="nomeusuario" class="descricao_login">Nome de usuário:</label>
+          <input type="usuario" class="card_login" id="username" name="username" required>
+          
+          <label for="senha" class="descricao_login">Senha:</label>
+          <input type="senha" class="card_login" id="senha" name="senha" required>
+          
+          <input type="submit" class="botoes_ancora" id="entrar" name="Entrar">
+          <a class="botoes_ancora2" href="../Cadastro/formulario.html">Cadastrar</a>
+        </form>
+      </section>
+
+      <h2 class="titulo">Esfiharia Gêmeos</h2>
+  </body>
+
+  </html>
+
+  <script src="./manis.js"></script>
 </body>
+
 </html>
