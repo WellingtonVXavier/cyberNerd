@@ -29,14 +29,14 @@
 }
 
 .container__imagem {
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .lista-menu {
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: 5vw;
 }
 
 .container__botao:checked~.lista-menu {
@@ -45,7 +45,7 @@
 
 .lista-menu__titulo,
 .lista-menu__item {
-    padding: 1em;
+    padding: 0.5em;
     background-color: var(--branco);
 }
 

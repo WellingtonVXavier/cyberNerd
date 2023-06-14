@@ -26,7 +26,6 @@
 .container {
     display: flex;
     align-items: center;
-    padding-right: 30px;
 }
 
 .container-img {
@@ -58,6 +57,14 @@
 }
 
 .lista-menu-link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.lista-menu-link-perfil {
     background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -107,6 +114,11 @@
         text-transform: uppercase;
     }
 
+    .opcoes_item-perfil {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
     .opcoes_link {
         text-decoration: none;
         color: var(--preto);
@@ -134,7 +146,16 @@
         color: var(--cor-branco);
     }
 
+    .opcoes_botoes:checked~.opcoes_rotulo-perfil>.opcoes_item-perfil {
+        background: var(--azul-degrade);
+        color: var(--cor-branco);
+    }
+
     .opcoes_item {
+        padding: 2em 1em;
+    }
+
+    .opcoes_item-perfil {
         padding: 2em 1em;
     }
 
@@ -147,9 +168,14 @@
         text-decoration: none;
     }
 
+    .lista-menu-perfil:hover>.lista-menu-perfil {
+        -webkit-text-fill-color: var(--cor-branco);
+        text-decoration: none;
+    }
+
     .botões__ancora:active {
         background-color: var(--azul);
-        }
+    }
 }
 
 @media screen and (min-width: 1728px) {
@@ -178,5 +204,39 @@
 
     .botões__ancora:active {
         background-color: var(--azul);
+    }
+
+    .lista-menu-Perfil {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 40vw;
+    }
+
+    .lista-menu-link-perfil {
+        background: var(--azul-degrade);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+
+    .lista-menu-perfil:hover>.lista-menu-perfil {
+        -webkit-text-fill-color: var(--cor-branco);
+        text-decoration: none;
+    }
+
+    .lista-menu-titulo-perfil,
+    .lista-menu-perfil {
+        padding: 0.5em;
+        background-color: var(--cor-branco);
+    }
+
+    .lista-menu-titulo-perfil {
+        font-weight: 400;
+        font-family: var(--fonte--principal);
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--azul);
     }
 }
