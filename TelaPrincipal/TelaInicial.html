@@ -24,8 +24,8 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container-botao">
-            <label for="menu" class="cotainer_rotulo">
-                <span class="cabecalho-menu container-img"></span>
+            <label for="menu" class="container_rotulo">
+                <span class="cabecalho-menu container_img"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu-titulo">Categorias</li>
@@ -45,7 +45,7 @@
                     <a href="#" class="lista-menu-link">Design & UX</a>
                 </li>
             </ul>
-            <img src="./img/Logo.svg" alt="logo da alura Books" class="container-img">
+            <img src="./img/Logo.svg" alt="logo da alura Books" class="container_img_logo">
             <h1 class="container_titulo"><b class="container_titulo--negrito">Alura</b>Books</h1>
         </div>
 
@@ -53,25 +53,27 @@
             <input type="checkbox" id="opcoes-menu" class="opcoes_botoes">
             <label for="opcoes-menu" class="opcoes_rotulo">
                 <li class="opcoes_item">Categorias</li>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Programação</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Front-end</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Infraestrutura</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Business</a>
+                    </li>
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista-menu-link">Design & UX</a>
+                    </li>
+                </ul>
             </label>
 
-            <ul class="lista-menu">
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu-link">Programação</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu-link">Front-end</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu-link">Infraestrutura</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu-link">Business</a>
-                </li>
-                <li class="lista-menu-item">
-                    <a href="#" class="lista-menu-link">Design & UX</a>
-                </li>
-            </ul>
+
             <li class="opcoes_item">
                 <a href="#" class="opcoes_link">Favoritos</a>
             </li>
@@ -82,63 +84,54 @@
 
         <div class="container">
             <a href="#">
-                <img src="./img/Favoritos.svg" alt="Meus Favoritos" class="container-img container_img_transparente">
+                <img src="./img/Favoritos.svg" alt="Meus Favoritos" class="container_img container_img_transparente">
             </a>
             <a href="#" class="container_link">
-                <img src="./img/Compras.svg" alt="Carrinho de Compras" class="container-img">
+                <img src="./img/Compras.svg" alt="Carrinho de Compras" class="container_img">
                 <p class="container_texto">Minha Sacola</p>
             </a>
-            <!-- <a href="#" class="container_link">
-                <img src="./img/Usuário.svg" alt="Meu Perfil" class="container-img">
-                <p class="container_texto">Meu Perfil</p>
-            </a> -->
+        </div>
 
-            <div class="container">
-                <input type="checkbox" id="menu" class="container-botao">
-                <!-- <span class="cabecalho-menu container-img"></span> -->
-                <a href="#"><img src="./img/Usuário.svg" alt="Meu Perfil" class="container-img"></a>
-                <label for="menu" class="cotainer_rotulo">
-                    <span class="cabecalho-menu container-img"></span>
-                </label>
-                <ul class="lista-menu-Perfil">
-                    <a href="#"><li class="lista-menu-titulo-perfil">Meu Perfil</li></a>
-                    <li class="lista-menu-perfil">
-                        <a href="#" class="lista-menu-link-perfil">Página Inicial</a>
-                    </li>
-                    <li class="lista-menu-perfil">
-                        <a href="#" class="lista-menu-link">Meus Dados</a>
-                    </li>
-                    <li class="lista-menu-perfil">
-                        <a href="#" class="lista-menu-link">Pedidos</a>
-                    </li>
-                    <li class="lista-menu-perfil">
-                        <a href="#" class="lista-menu-link">Sair</a>
-                    </li>
-                </ul>
-            </div>
-
-            <ul class="opcoes_perfil">
-                <input type="checkbox" id="opcoes-menu" class="opcoes_botoes">
-                <label for="opcoes-menu" class="opcoes_rotulo-perfil">
-                    <a href="#"><li class="lista-menu-titulo-perfil">Meu Perfil</li></a>
-                </label>
-
-                <ul class="lista-menu">
-                    <li class="lista-menu-item">
-                        <a href="#" class="lista-menu-link">Página Inicial</a>
-                    </li>
-                    <li class="lista-menu-item">
-                        <a href="#" class="lista-menu-link">Meus Dados</a>
-                    </li>
-                    <li class="lista-menu-item">
-                        <a href="#" class="lista-menu-link">Pedidos</a>
-                    </li>
-                    <li class="lista-menu-item">
-                        <a href="#" class="lista-menu-link">Sair</a>
-                    </li>
-                </ul>
+        <div class="container">
+            <!-- <input type="checkbox" id="menu_perfil" class="container_botao_perfil"> -->
+            <label for="menu" class="cotainer_rotulo_perfil">
+                <span class="cabecalho-menu-perfil container_img"></span>
+            </label>
+            <ul class="lista-menu-perfil">
+                <a href="#">
+                   <p class="container_texto" id="perfil">Meu Perfil</p>
+                </a>
+                <li class="lista-perfil-item">
+                    <a href="#" class="lista-menu-link-perfil">Meus Dados</a>
+                </li>
+                <li class="lista-perfil-item">
+                    <a href="#" class="lista-menu-link-perfil">Pedidos</a>
+                </li>
+                <li class="lista-perfil-item">
+                    <a href="../Login/TelaLogin.html" class="lista-menu-link-perfil">Sair</a>
+                </li>
             </ul>
         </div>
+
+        <ul class="opcoes_perfil">
+            <input type="checkbox" id="opcoes-menu" class="opcoes_botoes_perfil">
+            <label for="opcoes-menu" class="opcoes_rotulo_perfil">
+                <p class="container_texto" id="perfil">Meu Perfil</p>
+                <div class="menu_container">                    
+                    <ul class="lista_menu_perfil" id="list_perfil">
+                        <li class="lista-menu-item_perfil">
+                            <a href="#" class="lista-menu-link-perfil">Meus Dados</a>
+                        </li>
+                        <li class="lista-menu-item_perfil">
+                            <a href="#" class="lista-menu-link-perfil">Pedidos</a>
+                        </li>
+                        <li class="lista-menu-item_perfil">
+                            <a href="../Login/TelaLogin.html" class="lista-menu-link-perfil">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+        </ul>
     </header>
 
     <section class="banner">
@@ -257,7 +250,7 @@
                 </div>
             </div>
         </div>
-    </section>,
+    </section>
 
     <section class="topicos">
         <h2 class="topicos_titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
