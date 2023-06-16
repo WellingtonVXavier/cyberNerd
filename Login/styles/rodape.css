@@ -52,11 +52,13 @@ hr {
 
     .rodape {
          /* padding: 45em 0;  */
-        padding-top: 728px;
+        padding-top: 730px;
     } 
 
     .lista_rodape_link {
         text-decoration: none;
         font-family: var(--fonte-secundaria);
     }
+
+    
 }

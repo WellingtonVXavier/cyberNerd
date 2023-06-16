@@ -1,7 +1,10 @@
-var form = document.getElementById('form-login')
+var form = document.getElementById('form-login');
 var entrarButton = document.getElementById('entrar');
-var usuarioInput = document.getElementById('username')
+var usuarioInput = document.getElementById('username');
 var senhaInput = document.getElementById('senha');
+
+
+
 
 form.addEventListener("submit", event => {
     event.preventDefault();
@@ -16,11 +19,11 @@ form.addEventListener("submit", event => {
 var usuariosCadastrados = [
     { usuario: 'admin', senha: 'Hulk2008$' },
     { usuario: 'admin2', senha: 'Toom153@' },
-    { usuario: 'admin3', senha: 'Senha897#' } 
+    { usuario: 'admin3', senha: 'Senha897#' }
 ];
 
 function findUsuario(username) {
-    return usuariosCadastrados.find( usuario => usuario.usuario === username)
+    return usuariosCadastrados.find(usuario => usuario.usuario === username)
 }
 
 function validarLogin(campos) {
@@ -30,7 +33,7 @@ function validarLogin(campos) {
     let usuarioEncontrado = findUsuario(username)
 
     if (usuarioEncontrado) {
-        if (validaSenha(usuarioEncontrado,senha)) {
+        if (validaSenha(usuarioEncontrado, senha)) {
             window.location.href = '../TelaPrincipal/TelaInicial.html';
         } else {
             alert('Senha e/ou Usuário inválidos. Tente novamente.');
@@ -40,8 +43,8 @@ function validarLogin(campos) {
     }
 }
 
-function validaSenha(usuarioEncontrado,senha){
-    return usuarioEncontrado.senha === senha ;
+function validaSenha(usuarioEncontrado, senha) {
+    return usuarioEncontrado.senha === senha;
 }
 
 
