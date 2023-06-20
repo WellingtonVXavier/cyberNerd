@@ -88,27 +88,29 @@
             </a>
             <a href="#" class="container_link">
                 <img src="./img/Compras.svg" alt="Carrinho de Compras" class="container_img">
-                <p class="container_texto">Minha Sacola</p>
+                <!-- <p class="opcoes_item">Minha Sacola</p> -->
+
             </a>
         </div>
 
         <div class="container">
-            <!-- <input type="checkbox" id="menu_perfil" class="container_botao_perfil"> -->
+            <input type="checkbox" id="menu_perfil" class="container_botao_perfil">
             <label for="menu" class="cotainer_rotulo_perfil">
                 <span class="cabecalho-menu-perfil container_img"></span>
             </label>
+            <li class="opcoes_item">
+                <a href="#" class="opcoes_link">Minha Sacola</a>
+            </li>
             <ul class="lista-menu-perfil">
-                <a href="#">
-                   <p class="container_texto" id="perfil">Meu Perfil</p>
-                </a>
+                <li class="lista-menu-titulo">Meu Perfil</li>
                 <li class="lista-perfil-item">
-                    <a href="#" class="lista-menu-link-perfil">Meus Dados</a>
+                    <a href="#" class="lista-perfil-link">Meus Dados</a>
                 </li>
                 <li class="lista-perfil-item">
-                    <a href="#" class="lista-menu-link-perfil">Pedidos</a>
+                    <a href="#" class="lista-perfil-link">Pedidos</a>
                 </li>
                 <li class="lista-perfil-item">
-                    <a href="../Login/TelaLogin.html" class="lista-menu-link-perfil">Sair</a>
+                    <a href="../Login/TelaLogin.html" class="lista-perfil-link">Sair</a>
                 </li>
             </ul>
         </div>
@@ -116,20 +118,19 @@
         <ul class="opcoes_perfil">
             <input type="checkbox" id="opcoes-menu" class="opcoes_botoes_perfil">
             <label for="opcoes-menu" class="opcoes_rotulo_perfil">
-                <p class="container_texto" id="perfil">Meu Perfil</p>
-                <div class="menu_container">                    
-                    <ul class="lista_menu_perfil" id="list_perfil">
-                        <li class="lista-menu-item_perfil">
-                            <a href="#" class="lista-menu-link-perfil">Meus Dados</a>
-                        </li>
-                        <li class="lista-menu-item_perfil">
-                            <a href="#" class="lista-menu-link-perfil">Pedidos</a>
-                        </li>
-                        <li class="lista-menu-item_perfil">
-                            <a href="../Login/TelaLogin.html" class="lista-menu-link-perfil">Sair</a>
-                        </li>
-                    </ul>
-                </div>
+                <li class="opcoes_item_perfil" id="perfil">Meu Perfil</li>
+
+                <ul class="lista-menu-perfil" id="list-perfil">
+                    <li class="lista-perfil-item">
+                        <a href="#" class="lista-perfil-link">Meus Dados</a>
+                    </li>
+                    <li class="lista-perfil-item">
+                        <a href="#" class="lista-perfil-link">Pedidos</a>
+                    </li>
+                    <li class="lista-perfil-item">
+                        <a href="../Login/TelaLogin.html" class="lista-perfil-link">Sair</a>
+                    </li>
+                </ul>
             </label>
         </ul>
     </header>

@@ -12,109 +12,54 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Login/styles/login.css">
-    <!-- <link rel="stylesheet" href="./styles/rodape.css"> --> 
     <title>Login</title>
 </head>
 
 <body>
     <html>
+    <h1 class="descricao_titulo">Login</h1>
+    <!-- Modal Login -->
+    <section class="cardInfo1">
+        <div class="modal-content" id="content">
+            <form id="form-login">
+                <label for="nomeusuario" class="descricao_login">Nome de usuário:</label>
+                <input type="email" class="card_login" id="username" name="username">
 
-    <h1 class="descricao_titulo">Login</h1> 
+                <label for="senhausuario" class="descricao_login">Senha:</label>
+                <input type="password" class="card_login" id="senha" name="senha">
 
-    <section class="card">
-        <form id="form-login">
-            <label for="nomeusuario" class="descricao_login">Nome de usuário:</label>
-            <input type="usuario" class="card_login" id="username" name="username">
-
-            <label for="senhausuario" class="descricao_login">Senha:</label>
-            <input type="senha" class="card_login" id="senha" name="senha">
-
-            <input type="submit" class="botoes_ancora" id="entrar" name="Entrar">
-            <a class="botoes_ancora2" href="../Cadastro/formulario.html">Cadastrar</a>
-        </form>
+                <div class="modal-footer">
+                    <input type="submit" class="botoes" id="entrar" value="Entrar">
+                    <a href="../Cadastro/formulario.html">
+                        <input type="button" class="botoes" value="cadastro">
+                    </a>
+                </div>
+            </form>
+        </div>
     </section>
 
-    <hr>
+    <!-- modal Informações -->
 
-    <!-- <footer class="rodape">
-        <h2 class="rodape_titulo">Grupo Alura</h2>
-        <ul class="lista_rodape">
-            <li class="lista_rodape_titulo">Educação</li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/Caelum.svg" alt="Logo da Caelum">
-                <a href="https://caelum.com.br/" class="lista_rodape_link">Caelum</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/CasaDoCodigo.svg" alt="Logo da Casa do Código">
-                <a href="https://www.casadocodigo.com.br/" class="lista_rodape_link">Casa do Código</a>
-            </li>
-        </ul>
+    <section class="cardInfo" id="cardModal">
 
-        <ul class="lista_rodape">
-            <li class="lista_rodape_titulo">EDUCAÇÃO ONLINE</li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/Alura.svg" alt="Logo da Alura">
-                <a href="https://www.alura.com.br/" class="lista_rodape_link">Alura</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
-                <a href="https://www.alura.com.br/empresas" class="lista_rodape_link">Alura Para Empresas</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/AluraLATAM.svg" alt="Logo da Alura Latam">
-                <a href="https://www.aluracursos.com/" class="lista_rodape_link">Alura Latam</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/AluraStart.svg" alt="Logo da Alura Start">
-                <a href="https://www.alurastart.com.br/" class="lista_rodape_link">Alura Start</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/MusicDot.svg" alt="Logo da Music Dot">
-                <a href="https://www.musicdot.com.br/" class="lista_rodape_link">Music Dot</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/AluraLingua.svg" alt="Logo da Alura Línguas">
-                <a href="https://www.aluralingua.com.br/" class="lista_rodape_link">Alura Línguas</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/PM3.svg" alt="Logo MP3">
-                <a href="https://www.cursospm3.com.br/" class="lista_rodape_link">MP3</a>
-            </li>
-        </ul>
-
-        <ul class="lista_rodape">
-            <li class="lista_rodape_titulo">COMUNIDADE</li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/HipstersJobs.svg" alt="Logo de Hipsters">
-                <a href="https://hipsters.tech/" class="lista_rodape_link">Hipster ponto Tech</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/ScubaDev.svg" alt="Logo da Scuba Dev">
-                <a href="https://scuba.dev.br/" class="lista_rodape_link">Scuba Dev</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/LayersTech.svg" alt="Logo Layeras ponto Tech">
-                <a href="https://layerspontotech.com.br/" class="lista_rodape_link">Layeras ponto Tech</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/LikeABoss.svg" alt="Logo Like a Boss">
-                <a href="https://likeaboss.com.br/" class="lista_rodape_link">Like a Boss</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/CarreiraSemFronteira.svg" alt="Logo Carreira sem Fronteiras">
-                <a href="https://www.carreirasemfronteiras.com.br/" class="lista_rodape_link">Carreira sem
-                    Fronteiras</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/HipstersJobs.svg" alt="Logo da Hipster ponto Jobs">
-                <a href="https://hipsters.jobs/" class="lista_rodape_link">Hipsters ponto Jobs</a>
-            </li>
-            <li class="lista_rodape_item">
-                <img src="../TelaPrincipal/img/GUJ.svg" alt="Logo GUJ">
-                <a href="https://www.guj.com.br/" class="lista_rodape_link">GUJ</a>
-            </li>
-        </ul>
-    </footer> -->
+        <div class="modal" id="modalCard"  tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <label for="senhausuario" class="descricao_login">Informações</label>
+                    </div>
+                    <div id="fundo" class="descricao_login"></div>
+                    <div class="modal-footer">
+                        <input type="submit" class="botoes" id="Fechar" value="Fechar">
+                        <a href="../Cadastro/formulario.html">
+                            <input type="button" class="botoes" id="cadastro" value="cadastro">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
     <script src="./main.js"></script>
 </body>

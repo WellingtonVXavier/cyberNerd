@@ -4,8 +4,6 @@ var usuarioInput = document.getElementById('username');
 var senhaInput = document.getElementById('senha');
 
 
-
-
 form.addEventListener("submit", event => {
     event.preventDefault();
 
@@ -17,59 +15,70 @@ form.addEventListener("submit", event => {
 });
 
 var usuariosCadastrados = [
-    { usuario: 'admin', senha: 'Hulk2008$' },
-    { usuario: 'admin2', senha: 'Toom153@' },
-    { usuario: 'admin3', senha: 'Senha897#' }
+    { usuario: 'admin@admin.com', senha: 'Hulk2008$' },
+    { usuario: 'admin2@admin.com', senha: 'Toom153@' },
+    { usuario: 'admin3@admin.com', senha: 'Senha897#' }
 ];
 
 function findUsuario(username) {
     return usuariosCadastrados.find(usuario => usuario.usuario === username)
 }
 
-function validarLogin(campos) {
+function validarLogin(campos, event) {
     var username = campos.usuario;
     var senha = campos.senha;
-
     let usuarioEncontrado = findUsuario(username)
 
-    if (usuarioEncontrado) {
-        if (validaSenha(usuarioEncontrado, senha)) {
-            window.location.href = '../TelaPrincipal/TelaInicial.html';
+    // if (username.value === "" && senha.valeu === "") {
+    //     event.preventDefault();
+    // } else {
+
+        if (usuarioEncontrado) {
+            if (validaSenha(usuarioEncontrado, senha)) {
+                window.location.href = '../TelaPrincipal/TelaInicial.html';
+            } else {
+                ValidarMensagem('Senha e/ou Usuário inválidos. Tente novamente.');
+                abrirModal()
+            }
         } else {
-            alert('Senha e/ou Usuário inválidos. Tente novamente.');
+            ValidarMensagem('Usuário não cadastrado.');
+            abrirModal()
         }
-    } else {
-        alert('Usuário não cadastrado.');
-    }
+    // }
 }
 
 function validaSenha(usuarioEncontrado, senha) {
     return usuarioEncontrado.senha === senha;
 }
 
+function ValidarMensagem(e) {
+    const novo_elemeto = document.createElement("p");
+    novo_elemeto.classList.add("mensagem");
 
+    novo_elemeto.innerHTML += e;
+    fundo.appendChild(novo_elemeto);
+}
 
-// function senhaCorreta(senha) {
-//     // Verifica se a senha possui pelo menos 8 caracteres
-//     if (senha.length < 8) {
-//         return false; // Senha inválida
-//     }
+function abrirModal() {
+    var menu = document.getElementById("modalCard");
+    var modalLogin = document.getElementById("content");
 
-//     // Verifica se a senha contém pelo menos um número
-//     if (!/\d/.test(senha)) {
-//         return false; // Senha inválida
-//     }
+    menu.classList.toggle("oculto");
+    modalLogin.classList.toggle("ocultar");
+}
 
-//     // Verifica se a senha contém pelo menos uma letra maiúscula
-//     if (!/[A-Z]/.test(senha)) {
-//         return false; // Senha inválida
-//     }
+document.getElementById("Fechar").addEventListener("click", () => {
+    var menu = document.getElementById("modalCard");
+    var recado = document.querySelectorAll(".mensagem");
+    var modalLogin = document.getElementById("content");
 
-//     // Verifica se a senha contém pelo menos uma letra minúscula
-//     if (!/[a-z]/.test(senha)) {
-//         return false; // Senha inválida
-//     }
+    usuarioInput.value = "";
+    senhaInput.value = "";
 
-//     // Se a senha atende a todos os critérios, é considerada válida
-//     return true; // Senha válida
-// }
+    recado.forEach((recado) => {
+        recado.parentNode.removeChild(recado);
+    });
+    
+    menu.classList.toggle("oculto");
+    modalLogin.classList.toggle("modal-content");    
+});
