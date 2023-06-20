@@ -8,7 +8,7 @@
     --fonte-secundaria: "Josefin Sans";
     --preto: #000000;
     --cinza: #474646;
-    --cinza-claro: #858585;
+    --cinza-claro: #858585; 
 }
 
 .descricao_titulo {
@@ -21,7 +21,7 @@
     font-size: 30px;
     font-family: var(--fonte--principal);
     background-color: var(--azul);
-    width: 30%;
+    width: 80%;
     border-radius: 5px;
     height: 35px;
     margin: 0 auto;
@@ -31,28 +31,116 @@
     transform: translate(-50%, -50%);
 }
 
+.cardInfo1 {
+    display: flex;
+    justify-content: center;
+    background: var(--cor-branco);
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 20em;
+    padding: 2em;
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid var(--azul);
+}
+
+.botoes {
+    background-color: var(--cor-laranja);
+    padding: 0.5em 3.5em;
+    font-size: 10px;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    color: var(--cor-branco);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--azul);
+    margin-top: 2em;
+}
+
 .card_login {
+    border-radius: 24px;
+    width: 240px;
+    height: 20px;
     display: flex;
     background: var(--cor-branco);
     box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-.card_login {
-    border-radius: 24px;
-    width: 200px;
-    height: 20px;
-}
-
-
 .descricao_login {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--azul);
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte--principal);
     margin: 0.5em 0;
 }
+
+/* MODAL */ 
+
+#fundo {
+    font-size: 12px;
+}
+
+.modal-content.ocultar {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.modal.oculto {
+    display: flex;
+    justify-content: center;
+    background: var(--cor-branco);
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 10em;
+    padding: 2em;
+    width: 18em;
+    margin: 60%;
+    position: absolute;
+    top: 35%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid var(--azul);
+}
+
+.botoes {
+    background-color: var(--cor-laranja);
+    padding: 0.5em 3.5em;
+    font-size: 10px;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    color: var(--cor-branco);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--azul);
+    margin-top: 2em;
+
+}
+
+#cadastro {
+    text-decoration: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+} 
+
+
+.modal {
+    display: none;
+}
+
 
 @media screen and (min-width: 1728px) {
 
@@ -183,8 +271,5 @@
         align-items: center;
         margin-bottom: 1rem;
         padding-bottom: 1rem;
-    }
-
-
-      
+    }      
 }
