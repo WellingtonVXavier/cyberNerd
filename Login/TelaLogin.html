@@ -11,13 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500;600;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../Login/styles/login.css">
+    <link rel="stylesheet" href="../Login/styles/banner.css">
+    <link rel="stylesheet" href="../Login/styles/header.css">
+    <link rel="stylesheet" href="../Login/styles/rodape.css">
     <title>Login</title>
 </head>
 
 <body>
     <html>
-    <h1 class="descricao_titulo">Login</h1>
+    <header class="cabecalho">
+            <p class="nomeLoja">
+                Cyber<span class="nerd">Nerd</span>.
+            </p>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Tela de Login</h2>
+    </section>
+
     <!-- Modal Login -->
     <section class="cardInfo1">
         <div class="modal-content" id="content">
@@ -42,7 +59,7 @@
 
     <section class="cardInfo" id="cardModal">
 
-        <div class="modal" id="modalCard"  tabindex="-1" role="dialog">
+        <div class="modal" id="modalCard" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -58,9 +75,13 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
+    <p class="nomeLoja" id="nomeLoja">
+        Cyber<span class="nerd" id="nomeLoja">Nerd</span>.
+    </p>
+    
     <script src="./main.js"></script>
 </body>
 

@@ -284,4 +284,15 @@
         -webkit-text-fill-color: var(--cor-branco);
         text-decoration: none;
     }
+
+    .nomeLoja .cabeçalho {
+        margin-left: 1090px;
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--azul);
+    }
+    
+    .nerd {
+        color: var(--cor-laranja);
+    }
 }

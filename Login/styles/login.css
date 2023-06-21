@@ -1,60 +1,174 @@
-:root {
-    --cor-fundo: #EBECEE;
-    --cor-branco: #FFFFFF;
-    --cor-laranja: #EB9B00;
-    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --fonte--principal: "Poppins";
-    --azul: #002F52;
-    --fonte-secundaria: "Josefin Sans";
-    --preto: #000000;
-    --cinza: #474646;
-    --cinza-claro: #858585;
+
+
+.nomeLoja {
+    text-align: center;   
+    margin-top: 30px;
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--azul);
 }
 
+.nerd {
+    color: var(--cor-laranja);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: var(--fonte--principal);
+}
+
+.background,
 .descricao_titulo {
     margin: 0 auto;
-    margin-top: 1px;
+    /* margin-top: 20px; */
     display: flex;
     justify-content: center;
-    color: var(--cor-laranja);
-    font-weight: 700;
-    font-size: 30px;
-    font-family: var(--fonte--principal);
     background-color: var(--azul);
-    width: 30%;
     border-radius: 5px;
-    height: 35px;
+    height: 26px;
+    position: absolute;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    top: 13%;
+    left: 50%;
+    width: 78%;    
+}
+
+.cardInfo1 {
+    display: flex;
+    justify-content: center;
+    background: var(--cor-branco);
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 20em;
+    padding: 2em;
+    width: 60%;
     margin: 0 auto;
     position: absolute;
-    top: 5%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-bottom: 1px solid var(--azul);
+}
+
+.botoes {
+    background-color: var(--cor-laranja);
+    padding: 0.5em 1em;
+    font-size: 5px;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    color: var(--cor-branco);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--azul);
+    margin-top: 1em;
 }
 
 .card_login {
+    border-radius: 24px;
+    width: 240px;
+    height: 20px;
     display: flex;
     background: var(--cor-branco);
     box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-.card_login {
-    border-radius: 24px;
-    width: 200px;
-    height: 20px;
-}
-
-
 .descricao_login {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--azul);
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte--principal);
     margin: 0.5em 0;
 }
 
+#nomeLoja {
+    margin-top: 620px;
+    text-align: center;
+    opacity: 70%;
+    font-weight: 500;
+}
+
+/* MODAL */ 
+
+#fundo {
+    font-size: 12px;
+}
+
+.modal-content.ocultar {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.modal.oculto {
+    display: flex;
+    justify-content: center;
+    background: var(--cor-branco);
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 10em;
+    padding: 2em;
+    width: 18em;
+    margin: 60%;
+    position: absolute;
+    top: 35%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid var(--azul);
+}
+
+.botoes {
+    background-color: var(--cor-laranja);
+    padding: 0.5em 3.5em;
+    font-size: 10px;
+    font-family: var(--fonte--principal);
+    font-weight: 700;
+    color: var(--cor-branco);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--azul);
+    margin-top: 2em;
+}
+
+#cadastro {
+    text-decoration: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal {
+    display: none;
+}
+
 @media screen and (min-width: 1728px) {
+
+    .nomeLoja {
+        text-align: start;
+        margin-top: 50px;
+        margin-left: 50px;
+        font-family: var(--fonte-nome);
+        font-weight: 400;
+        font-size: 25px;
+        color: var(--azul);
+    }
+    
+    .nerd {
+        text-align: start;
+        margin-top: 50px;
+        /* margin-left: 0px; */
+        color: var(--cor-laranja);
+        font-weight: 400;
+        font-size: 25px;
+        font-family: var(--fonte-nome);
+    }
 
     .descricao_titulo {
         margin: 0 auto;
@@ -71,9 +185,13 @@
         transform: translate(-50%, -50%);
     }
 
+    #nomeLoja {
+        margin-top: 700px;
+    }
+
     .descricao_titulo {
         font-weight: 700;
-        font-size: 25px;
+        font-size: 15px;
         background-color: var(--azul);
         color: var(--cor-branco);
         font-family: var(--fonte--principal);
@@ -91,7 +209,7 @@
         width: 20%;
         margin: 0 auto;
         position: absolute;
-        top: 25%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         border-bottom: 1px solid var(--azul);
@@ -108,7 +226,7 @@
         display: flex;
         justify-content: center;
         border-radius: 24px;
-        width: 450px;
+        width: 400px;
         height: 20px;
     }
 
@@ -160,8 +278,8 @@
         flex-direction: row;
         justify-content: space-between;
         background-color: var(--cor-laranja);
-        padding: 0.6em 5.5em;
-        font-size: 14px;
+        padding: 0.6em 7em;
+        font-size: 10px;
         font-family: var(--fonte--principal);
         font-weight: 700;
         color: var(--cor-branco);
@@ -183,8 +301,5 @@
         align-items: center;
         margin-bottom: 1rem;
         padding-bottom: 1rem;
-    }
-
-
-      
+    }      
 }

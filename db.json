@@ -1,0 +1,52 @@
+{
+  "cadastro": [
+    {
+      "nome": "wellington Vaz Xavier",
+      "dataNascimento": "28-03-1987",
+      "contato": "1194636-4938",
+      "email": "wellingtonvxavier@gmail.com",
+      "cep": "03953-120",
+      "enredeco": "Frutuoso Nunes",
+      "numero": "27",
+      "complemento": "casa 2",
+      "bairro": "Jardim Cinco de Julho",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "senha": "Hulk2008$",
+      "confirmaSenha": "Hulk2008$",
+      "id": 1
+    },
+    {
+      "nome": "Lucas Balbino",
+      "dataNascimento": "09-02-2000",
+      "contato": "1195636-8974",
+      "email": "balbino@gmail.com",
+      "cep": "04411050",
+      "enredeco": "Thomás Morley",
+      "numero": "45",
+      "complemento": "casa 1",
+      "bairro": "Americanópolis",
+      "cidade": "São Paulo",
+      "uf": "São Paulo",
+      "senha": "Hulk2008$",
+      "confirmaSenha": "Hulk2008$",
+      "id": 2
+    },
+    {
+      "nome": "Tainara Rodrigues de Oliveira",
+      "dataNascimento": "11-11-1987",
+      "contato": "1195349-6810",
+      "email": "tainara.r.oliveira1987@gmail.com@gmail.com",
+      "cep": "03953-120",
+      "enredeco": "Frutuoso Nunes",
+      "numero": "27",
+      "complemento": "casa 2",
+      "bairro": "Jardim Cinco de Julho",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "senha": "Hulk2008$",
+      "confirmaSenha": "Hulk2008$",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+
+.banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 1em;
+    margin-top: 100px;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--fonte--principal);
+    color: var(--cor-branco);
+}
+
+@media screen and (min-width: 1728px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+}

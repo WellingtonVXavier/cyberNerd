@@ -1,0 +1,39 @@
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__texto {
+    display: none;
+}
+
+@media screen and (min-width: 1728px) {
+
+    .nomeLoja {
+        text-align: start;   
+        margin-top: 30px;
+        font-family: var(--fonte--principal);
+        font-weight: 400;
+        font-size: 25px;
+        color: var(--azul);
+    }
+    
+    .nerd {
+        color: var(--cor-laranja);
+        font-weight: 400;
+        font-size: 25px;
+        font-family: var(--fonte--principal);
+    }
+
+    .cabeçalho {
+        padding: 0 2em;
+    }
+}
