@@ -1,0 +1,36 @@
+{
+  "cadastro": [
+    {
+      "nome": "jenoveva",
+      "dataNascimento": "11-11-1987",
+      "contato": "(11)95349-6810",
+      "email": "tainara.oliveira.r@gmail.com@gmail.com",
+      "cep": "03953-120",
+      "endereco": "Frutuoso Nunes",
+      "numero": "27",
+      "complemento": "casa 2",
+      "bairro": "Jardim Cinco de Julho",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "senha": "Hulk2008$",
+      "confirmaSenha": "Hulk2008$",
+      "id": 1
+    },
+    {
+      "nome": "jenovez",
+      "dataNascimento": "28-03-1987",
+      "contato": "(11)94636-4938",
+      "email": "wellingtonvxavier@gmail.com",
+      "cep": "03953-130",
+      "endereco": "capitão wow",
+      "numero": "88",
+      "complemento": "casa 1",
+      "bairro": "jardim mariliano",
+      "cidade": "Bahia",
+      "uf": "BA",
+      "senha": "Hulk1508",
+      "confirmaSenha": "Hulk1508",
+      "id": 2
+    }
+  ]
+}
