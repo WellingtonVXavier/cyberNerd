@@ -1,6 +1,6 @@
 function callBackSucesso(result) {
-    
-    result.forEach( itemFuncionario => {
+
+    result.forEach(itemFuncionario => {
         $("table.funcionarios tbody").append(`
             <tr>
                 <td>
@@ -44,7 +44,7 @@ function callBackSucesso(result) {
                 </td>
             </tr>
         `)
-        console.log(itemFuncionario.contato)
+        console.log(itemFuncionario)
     })
 
 }
@@ -55,10 +55,10 @@ function callBackErro(error) {
 }
 
 let configRequest = {
-"url": "http://localhost:3001/cadastro",
-"type": "GET",
-success : (result) => callBackSucesso(result),
-error : (error) => callBackErro(error)
+    "url": "http://localhost:3000/cadastro",
+    "type": "GET",
+    success: (result) => callBackSucesso(result),
+    error: (error) => callBackErro(error)
 }
 
 $.ajax(configRequest)

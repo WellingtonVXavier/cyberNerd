@@ -3,7 +3,6 @@ var entrarButton = document.getElementById('entrar');
 var usuarioInput = document.getElementById('username');
 var senhaInput = document.getElementById('senha');
 
-
 form.addEventListener("submit", event => {
     event.preventDefault();
 
@@ -14,14 +13,42 @@ form.addEventListener("submit", event => {
     validarLogin(campos);
 });
 
-var usuariosCadastrados = [
-    { usuario: 'admin@admin.com', senha: 'Hulk2008$' },
-    { usuario: 'admin2@admin.com', senha: 'Toom153@' },
-    { usuario: 'admin3@admin.com', senha: 'Senha897#' }
-];
+// contrando usuarios no banco: 
+let funcionarios = { email: "", senha: "" }
+
+function callBackAcerto(result) {
+
+    funcionarios = result.map(itemfuncionario => {
+        return {
+            email: itemfuncionario.email,
+            senha: itemfuncionario.senha
+        }
+    });
+}
+
+function callBackInvalido(error) {
+    alert("Ocorreu um erro na Atualização")
+    console.log("error", error)
+}
+
+let configRequest = {
+    "url": "http://localhost:3000/cadastro",
+    "type": "GET",
+    success: (result) => callBackAcerto(result),
+    error: (error) => callBackInvalido(error)
+}
+
+$.ajax(configRequest)
+
+
+// var usuariosCadastrados = [
+//     { usuario: 'admin@admin.com', senha: 'Hulk2008$' },
+//     { usuario: 'admin2@admin.com', senha: 'Toom153@' },
+//     { usuario: 'admin3@admin.com', senha: 'Senha897#' }
+// ];
 
 function findUsuario(username) {
-    return usuariosCadastrados.find(usuario => usuario.usuario === username)
+    return funcionarios.find(usuarioEmail => usuarioEmail.usuario === username)
 }
 
 function validarLogin(campos, event) {
@@ -33,17 +60,17 @@ function validarLogin(campos, event) {
     //     event.preventDefault();
     // } else {
 
-        if (usuarioEncontrado) {
-            if (validaSenha(usuarioEncontrado, senha)) {
-                window.location.href = '../TelaPrincipal/TelaInicial.html';
-            } else {
-                ValidarMensagem('Senha e/ou Usuário inválidos. Tente novamente.');
-                abrirModal()
-            }
+    if (usuarioEncontrado) {
+        if (validaSenha(usuarioEncontrado, senha)) {
+            window.location.href = '../TelaPrincipal/TelaInicial.html';
         } else {
-            ValidarMensagem('Usuário não cadastrado.');
+            ValidarMensagem('Senha e/ou Usuário inválidos. Tente novamente.');
             abrirModal()
         }
+    } else {
+        ValidarMensagem('Usuário não cadastrado.');
+        abrirModal()
+    }
     // }
 }
 
@@ -78,7 +105,7 @@ document.getElementById("Fechar").addEventListener("click", () => {
     recado.forEach((recado) => {
         recado.parentNode.removeChild(recado);
     });
-    
+
     menu.classList.toggle("oculto");
-    modalLogin.classList.toggle("modal-content");    
+    modalLogin.classList.toggle("modal-content");
 });
