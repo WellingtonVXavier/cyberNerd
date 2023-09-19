@@ -84,7 +84,7 @@
 @media screen and (min-width: 1366px) and (min-width: 1728px) {
 
     .principal {
-        width: 85vw;
+        width: 95vw;
         margin: 6em auto 7em auto;
     }
 
@@ -129,7 +129,9 @@
     }
 
     .formulario__botao {
-        background: var(--preto);
+        margin-top: 50px;
+        margin-left: 1550px;
+        background: var(--cor-padrao);
         padding: 1em 2em;
         font-weight: 700;
         font-size: 15px;

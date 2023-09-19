@@ -111,6 +111,22 @@
       "senha": "123klj",
       "confirmaSenha": "123klj",
       "id": 7
+    },
+    {
+      "nome": "Thanos",
+      "dataNascimento": "2023-09-18",
+      "contato": "11946364938",
+      "email": "wellingtonvxavier@gmail.com",
+      "cep": "03953-120",
+      "endereco": "rua: Frutuoso Nunes",
+      "numero": "27",
+      "complemento": "casa 2",
+      "bairro": "São Mateus",
+      "cidade": "são paulo",
+      "uf": "SP",
+      "senha": "123",
+      "confirmaSenha": "123",
+      "id": 8
     }
   ]
 }

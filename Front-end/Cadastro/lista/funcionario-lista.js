@@ -1,44 +1,26 @@
-function callBackSucesso(result) {
+// Defina a variável funcionarios como um array vazio inicialmente
+let funcionarios = [];
 
-    result.forEach((itemFuncionario, index) => {
+
+function preencherTabela() {
+    const tbody = $("table tbody");
+
+    funcionarios.forEach((itemFuncionario, index) => {
         $("table.funcionarios tbody").append(`
             <tr>
-                <td>
-                    ${itemFuncionario.nome}
-                </td>
-                <td>
-                    ${itemFuncionario.dataNascimento}
-                </td>
-                <td>
-                    ${itemFuncionario.email}
-                </td>
-                <td>
-                    ${itemFuncionario.contato}
-                </td>
-                <td>
-                   ${itemFuncionario.cep}
-                </td>
-                <td>
-                    ${itemFuncionario.endereco}
-                </td>
-                <td>
-                    ${itemFuncionario.numero}
-                </td>
-                <td>
-                    ${itemFuncionario.complemento}
-                </td>
-                <td>
-                    ${itemFuncionario.bairro}
-                </td>
-                <td>
-                    ${itemFuncionario.cidade}
-                </td>
-                <td>
-                ${itemFuncionario.uf}
-            </td>
-                <td>
-                    ${itemFuncionario.senha}
-                </td>
+                <td>${itemFuncionario.nome}</td>
+                <td>${itemFuncionario.dataNascimento}</td>
+                <td>${itemFuncionario.email}</td>
+                <td>${itemFuncionario.contato}</td>
+                <td>${itemFuncionario.cep}</td>
+                <td>${itemFuncionario.endereco}</td>
+                <td>${itemFuncionario.numero}</td>
+                <td>${itemFuncionario.complemento}</td>
+                <td>${itemFuncionario.bairro}</td>
+                <td>${itemFuncionario.cidade}</td>
+                <td>${itemFuncionario.uf}</td>
+                <td>${itemFuncionario.senha}</td>
+                <td>${itemFuncionario.confirmaSenha}</td>
                 <td>
                     <i class="fa-solid fa-pen-to-square fa-xl edit-icon" data-index="${index}">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
@@ -49,7 +31,12 @@ function callBackSucesso(result) {
             </tr>
         `)
     })
+}
 
+// Função de callback para sucesso na solicitação AJAX
+function callBackSucesso(data) {
+    funcionarios = data;
+    preencherTabela(); // Chame a função para preencher a tabela
 }
 
 function callBackErro(error) {
@@ -64,64 +51,76 @@ let configRequest = {
     error: (error) => callBackErro(error)
 }
 
+const configRequestSucesso = {
+    url: "http://localhost:3000/cadastro", // URL do servidor
+    type: "GET",
+    dataType: "json",
+    success: callBackSucesso, // Função de callback de sucesso
+    error: callBackErro // Função de callback de erro
+};
+
 $.ajax(configRequest)
 
-
-$(".edit-icon").on("click", function () {
-    // Obtenha o índice da linha clicada
-    const dataIndex = $(this).data("index");
-
-    // Obtenha os dados do funcionário com base no índice
-    const funcionario = result[dataIndex];
-
-    // Redirecione para a página de edição com os dados como parâmetros na URL
-    window.location.href = `editar-cadastro.html?
-    nome=${funcionario.nome}
-    &dataNascimento=${funcionario.dataNascimento}
-    &contato=${funcionario.contato}
-    &email=${funcionario.email}
-    &cep=${funcionario.cep}
-    &endereco${funcionario.endereco}
-    &numero=${funcionario.numero}
-    &complemento=${funcionario.complemento}
-    &bairro=${funcionario.bairro}
-    &cidade=${funcionario.cidade}
-    &uf=${funcionario.uf}
-    &senha=${funcionario.senha}`;
+// Adicione um evento de clique para o ícone de edição na coluna de ações
+$("table").on("click", ".edit-icon", function () {
+    const index = $(this).data("index");
+    ativarEdicao(index);
 });
 
-// Recupere os parâmetros da URL
-const urlParams = new URLSearchParams(window.location.search);
+// Função para ativar o modo de edição
+function ativarEdicao(index) {
+    const row = $("table tbody tr").eq(index);
 
-// Obtenha os valores dos parâmetros
-const nome = urlParams.get("nome");
-const dataNascimento = urlParams.get("nascimento");
-const contato = urlParams.get("telefone");
-const email = urlParams.get("email");
-const cep = urlParams.get("cep");
-const endereco = urlParams.get("endereco");
-const numero = urlParams.get("numero");
-const complemento = urlParams.get("complemento");
-const bairro = urlParams.get("bairro");
-const cidade = urlParams.get("cidade");
-const uf = urlParams.get("estado");
-const senha = urlParams.get("senha");
-const confirmaSenha = urlParams.get("confirmaSenha")
+    row.find("td").each((i, td) => {
+        const columnName = $("table th").eq(i).text();
+        const value = funcionarios[index][columnName];
+        $(td).html(`<input type="text" name="${columnName}" value="${value}" />`)
+    });
 
+    // Preencha os campos de entrada com os dados atuais do funcionário
+    const inputs = row.find("input");
+    const funcionario = funcionarios[index];
+    inputs.each((i, input) => {
+        const columnName = input.name; // O nome do campo deve coincidir com o nome da propriedade do objeto funcionario
+        input.value = funcionario[columnName];
+    });
 
-// Preencha os campos de edição com os valores obtidos
-document.getElementById("nome").value = nome;
-document.getElementById("nascimento").value = dataNascimento;
-document.getElementById("telefone").value = contato;
-document.getElementById("email").value = email;
-document.getElementById("cep").value = cep;
-document.getElementById("endereco").value = endereco;
-document.getElementById("numero").value = numero;
-document.getElementById("complemento").value = complemento;
-document.getElementById("bairro").value = bairro;
-document.getElementById("cidade").value = cidade;
-document.getElementById("estado").value = uf;
-document.getElementById("senha").value = senha;
-document.getElementById("confirmaSenha").value = confirmaSenha;
+    // Remova o botão de edição e adicione um botão "Salvar"
+    row.find(".edit-icon").remove();
+    row.find("td:last-child").html(`<button class="btn-save">Salvar</button>`);
+    console.log("Olá");
+}
 
+// Adicione um evento de clique para o botão "Salvar" na linha
+$("table").on("click", ".edit-icon", function () {
+    const index = $(this).closest("tr").index(); // Obtém o índice da linha
+    ativarEdicao(index);
+});
 
+// Função para salvar as alterações
+function salvarEdicao(index) {
+    const row = $("table tbody tr").eq(index);
+
+    // Crie um objeto com os dados editados
+    const editedFuncionario = {};
+    row.find("input").each((i, input) => {
+        editedFuncionario[input.name] = input.value;
+    });
+
+    // Faça uma solicitação AJAX para atualizar o arquivo db.json
+    $.ajax({
+        url: "http://localhost:3000/cadastro/" + editedFuncionario.id,
+        type: "PUT",
+        contentType: "application/json",
+        data: JSON.stringify(editedFuncionario),
+        success: () => {
+            // Atualize a tabela após o sucesso da atualização
+            funcionarios[index] = editedFuncionario;
+            preencherTabela(funcionarios);
+        },
+        error: (error) => {
+            alert("Ocorreu um erro na atualização");
+            console.log("error", error);
+        }
+    });
+}

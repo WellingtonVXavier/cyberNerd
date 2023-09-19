@@ -22,10 +22,10 @@ $("#atualizar").on("click", () => {
         cidade: $("#cidade").val(),
         uf: $("#estado").val(),
         senha: $("#senha").val(),
-        confirmaSenha: $("#confirma_senha").val()
+        confirmaSenha: $("#confirmaSenha").val()
     }
 
-    // console.table(formulario);
+    console.table(formulario);
 
     let conteudoPost = {
         "type": "POST",
