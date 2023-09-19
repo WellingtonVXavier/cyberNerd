@@ -1,72 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Front-end/Login/reset.css">
+    <link rel="stylesheet" href="../../Front-end/Login/styles/login.css">
+    <!-- Font-Mulish -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../Front-end/Login/styles/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="/Front-end/core/jquery.js"></script>
     <title>Login</title>
 </head>
 
 <body>
     <html>
-    <p class="container_Cyber">Cyber
-        <span class="container_nerd">Nerd</span>
-    </p>
-    <h1 class="descricao_titulo">Login</h1>
     <!-- Modal Login -->
-    <section class="cardInfo1">
-        <div class="modal-content" id="content">
-            <form id="form-login">
-                <label for="nomeusuario" class="descricao_login">Nome de usuário:</label>
-                <input type="email" class="card_login" id="username" name="username">
+    <p class="container_titulo">
+        Esfiharia Gemeos
+    </p>
+    <div class="descricao_titulo">
+        <h2 class="titulo_login">
+            Login
+        </h2>
+    </div>
 
-                <label for="senhausuario" class="descricao_login">Senha:</label>
-                <input type="password" class="card_login" id="senha" name="senha">
+    <section class="CardLogin">
+        <form class="login">
+            <div class="input">
+                <div>
+                    <input class="input-login" placeholder="Email" formControlName="email" id="usuario" required>
 
-                <div class="modal-footer">
-                    <input type="submit" class="botoes" id="entrar" value="Entrar">
-                    <a href="../../Front-end/Cadastro/formulario.html">
-                        <input type="button" class="botoes" value="cadastro">
-                    </a>
+                    <input class="input-login" type="password" placeholder="Senha" formControlName="senha" id="senha"
+                        required>
                 </div>
-            </form>
-        </div>
-    </section>
 
-    <!-- modal Informações -->
+                <div class="botoes">
+                    <button class="input-submit" (click)="submitLogin()" id="entrar">Entrar</button>
 
-    <section class="cardInfo" id="cardModal">
-
-        <div class="modal" id="modalCard" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <label for="senhausuario" class="descricao_login">Informações</label>
-                    </div>
-                    <div id="fundo" class="descricao_login"></div>
-                    <div class="modal-footer">
-                        <input type="submit" class="botoes" id="Fechar" value="Fechar">
-                        <a href="../../Front-end/Cadastro/formulario.html">
-                            <input type="button" class="botoes" id="cadastro" value="cadastro">
+                    <button class="input-submit">
+                        <a href="../Cadastro/cadastro-funcionario.html">
+                            Cadastro
                         </a>
-                    </div>
+                    </button>
                 </div>
             </div>
-        </div>
-
+        </form>
     </section>
 
-    <script src="../../Front-end/Login/login.js"></script>
-    <script src="../../Back-end/db.json"></script>
+    <!-- modal Informações  -->
+    <section id="cardModal">
+        <form class="cardInfo">
+            <div>
+                <i class="fa-solid fa-triangle-exclamation fa-2xl" style="color: #ffd43b;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                        <style>
+                            svg {
+                                fill: #ffd43b
+                            }
+                        </style>
+                        <path
+                            d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+                    </svg>
+                </i>
+                <h2 for="senhausuario" class="descricao_login">
+                    Informações
+                </h2>
+            </div>
+            <div>
+                <p>Usuário não cadastrado!</p>
+            </div>
+
+            <button id="Fechar" (click)="submitLogin()" class="botoes_info">
+                Fechar
+            </button>
+
+            <button class="botoes_info">
+                <a href="../Cadastro/cadastro-funcionario.html">
+                    Cadastro
+                </a>
+            </button>
+        </form>
+    </section>
+
+    <script src="./login.js"></script>
+    <script src="../../db.json"></script>
 </body>
 
 </html>

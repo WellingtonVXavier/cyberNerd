@@ -15,7 +15,7 @@ $("#atualizar").on("click", () => {
         contato: $("#telefone").val(),
         email: $("#email").val(),
         cep: $("#cep").val(),
-        enredeco: $("#endereco").val(),
+        endereco: $("#endereco").val(),
         numero: $("#numero").val(),
         complemento: $("#complemento").val(),
         bairro: $("#bairro").val(),
@@ -25,13 +25,25 @@ $("#atualizar").on("click", () => {
         confirmaSenha: $("#confirma_senha").val()
     }
 
-    let conteudoRequisicao = {
+    // console.table(formulario);
+
+    let conteudoPost = {
         "type": "POST",
         "url": "http://localhost:3000/cadastro",
         "data": formulario
     }
 
-    $.ajax(conteudoRequisicao)
+    $.ajax(conteudoPost)
+        .done(callBackSucesso(result))
+        .error(callBackErro(error))
+
+    let conteudoGet = {
+        "type": "GET",
+        "url": "http://localhost:3000/cadastro",
+        "data": formulario
+    }
+
+    $.ajax(conteudoGet)
         .done(callBackSucesso(result))
         .error(callBackErro(error))
 

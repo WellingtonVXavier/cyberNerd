@@ -7,14 +7,14 @@
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    color: var(--laranja)
+    color: var(--preto)
 }
 
 .principal__subtitulo {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: var(--azul);
+    color: var(--cor-padrao);
     margin: 1.5em 0 1em 0;
 }
 
@@ -23,12 +23,12 @@
     font-weight: 700;
     font-size: 13px;
     line-height: 24px;
-    color: var(--azul);
+    color: var(--cor-padrao);
     margin-left: 0;
 }
 
 .campo__escrita {
-    border: 1px solid var(--azul);
+    border: 1px solid var(--cor-padrao);
     border-radius: 24px;
     padding: 0.5em;
     width: 100%;
@@ -44,7 +44,7 @@
 }
 
 .formulario__botao {
-    background: var(--laranja);
+    background: var(--preto);
     padding: 0.5em 1em;
     font-weight: 700;
     font-size: 12px;
@@ -55,7 +55,7 @@
     cursor: pointer;
     /* float: right; */
     text-transform: uppercase;
-    border: 1px solid var(--azul);
+    border: 1px solid var(--cor-padrao);
     margin-left: 53%;
 }
 
@@ -81,7 +81,7 @@
 }
 
 
-@media screen and (min-width: 1366px) and (min-width: 1728px){
+@media screen and (min-width: 1366px) and (min-width: 1728px) {
 
     .principal {
         width: 85vw;
@@ -92,14 +92,14 @@
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        color: var(--laranja)
+        color: var(--preto)
     }
 
     .principal__subtitulo {
         font-weight: 700;
         font-size: 17px;
         line-height: 26px;
-        color: var(--azul);
+        color: var(--cor-padrao);
         margin: 3em 0 2em 0;
     }
 
@@ -108,12 +108,12 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
-        color: var(--azul);
+        color: var(--cor-padrao);
         margin-left: 1em;
     }
 
     .campo__escrita {
-        border: 1px solid var(--azul);
+        border: 1px solid var(--cor-padrao);
         border-radius: 24px;
         padding: 1em;
         width: 100%;
@@ -129,7 +129,7 @@
     }
 
     .formulario__botao {
-        background: var(--laranja);
+        background: var(--preto);
         padding: 1em 2em;
         font-weight: 700;
         font-size: 15px;
@@ -140,7 +140,7 @@
         cursor: pointer;
         float: right;
         text-transform: uppercase;
-        border: 1px solid var(--azul);
+        border: 1px solid var(--cor-padrao);
     }
 
     .formulario__erro {
@@ -166,7 +166,7 @@
 
     .funcionarios,
     .nome_titulo {
-        border: 3px solid var(--azul);
+        border: 3px solid var(--cor-padrao);
         gap: 10px;
         font-size: 15px;
         font-weight: 400;
@@ -175,7 +175,22 @@
     }
 
     .nome_dados {
-        border: 2px solid var(--azul);
+        border: 2px solid var(--cor-padrao);
+    }
+
+    table.funcionarios {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table.funcionarios th, table.funcionarios td {
+        border: 1px solid var(--cor-padrao);
+        padding: 8px;
+        text-align: left;
+    }
+
+    table.funcionarios tr:nth-child(even) {
+        background-color: rgb(242, 242, 242);
     }
 
 }
