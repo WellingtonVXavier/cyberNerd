@@ -29,7 +29,7 @@ table.funcionarios tr:nth-child(even) {
     background-color: var(--branco);
 }
 
-@media screen and (min-width: 1200px) and (min-width: 1728px) {
+@media screen and (min-width: 1200px) and (min-width: 1900px) {
 
     .principal {
         width: 95vw;
@@ -47,7 +47,7 @@ table.funcionarios tr:nth-child(even) {
     .nome_titulo {
         border: 3px solid var(--cor-padrao);
         gap: 10px;
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 400;
         font-family: var(--fonte-principal);
         border-radius: 5px;
@@ -59,7 +59,7 @@ table.funcionarios tr:nth-child(even) {
 
     table.funcionarios {
         border-collapse: collapse;
-        width: 70%;
+        width: 100%;
     }
 
     table.funcionarios th,

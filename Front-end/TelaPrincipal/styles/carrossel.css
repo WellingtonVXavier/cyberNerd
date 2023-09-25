@@ -1,6 +1,6 @@
 .carrossel-titulo {
-    color: var(--cor-laranja);
-    background-color: var(--cor-branco);
+    color: var(--branco);
+    background-color: var(--cor-padrao);
     text-align: center;
     text-transform: uppercase;
     font-family: var(--fonte--principal);

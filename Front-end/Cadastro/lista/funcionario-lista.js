@@ -139,7 +139,7 @@ function salvarEdicao(index, id) {
     const editedFuncionario = {};
 
     row.find("input").each((i, input) => {
-        editedFuncionario[input.name] = input.value;
+        editedFuncionario[input.name] = input.value.toUpperCase();
     });
 
     // Faça uma solicitação AJAX para atualizar o arquivo db.json

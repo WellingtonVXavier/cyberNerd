@@ -1,10 +1,3 @@
-// document.getElementById("perfil").addEventListener("mouseover", () => {
-//     document.getElementById("list-perfil").style.display = "block";
-// });
-
-// document.getElementById("perfil").addEventListener("mouseout", () => {
-//     document.getElementById("list-perfil").style.display = "none";
-// });
 
 const swiper = new Swiper('.swiper', {
     speed: 400,

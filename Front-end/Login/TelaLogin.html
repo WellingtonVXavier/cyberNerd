@@ -21,7 +21,7 @@
     <p class="container_titulo">
         Esfiharia Gemeos
     </p>
-    
+
     <div class="descricao_titulo">
         <h2 class="titulo_login">
             Login
@@ -29,16 +29,17 @@
     </div>
 
     <section class="CardLogin">
-        <form class="login">
+        <div class="login">
             <div class="input">
                 <div>
                     <input class="input-login" placeholder="Email" formControlName="email" id="usuario" required>
 
-                    <input class="input-login" type="password" placeholder="Senha" formControlName="senha" id="senha" required>
+                    <input class="input-login" type="password" placeholder="Senha" formControlName="senha" id="senha"
+                        required>
                 </div>
 
                 <div class="botoes">
-                    <button class="input-submit" (click)="submitLogin()" id="entrar">Entrar</button>
+                    <button class="input-submit entrar" id="entrar">Entrar</button>
 
                     <button class="input-submit">
                         <a href="../Cadastro/cadastro-funcionario.html">
@@ -47,19 +48,22 @@
                     </button>
                 </div>
             </div>
-        </form>
+        </div>
     </section>
 
     <!-- modal Informações  -->
     <section id="cardModal" class="modal">
-        <form class="cardInfo">
+        <div class="cardInfo">
             <div>
                 <i class="fa-solid fa-triangle-exclamation fa-2xl" style="color: #ffd43b;">
                     <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
                         <style>
-                            svg {fill: #ffd43b}
+                            svg {
+                                fill: #ffd43b
+                            }
                         </style>
-                        <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+                        <path
+                            d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
                     </svg>
                 </i>
 
@@ -74,7 +78,7 @@
                 </p>
             </div>
 
-            <button id="Fechar" (click)="submitLogin()" class="botoes_info">
+            <button id="Fechar" class="botoes_info">
                 Fechar
             </button>
 
@@ -83,7 +87,7 @@
                     Cadastro
                 </a>
             </button>
-        </form>
+        </div>
     </section>
 
     <script src="./login.js"></script>
