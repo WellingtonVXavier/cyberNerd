@@ -1,90 +1,38 @@
 .principal {
-    width: 70vw;
-    margin: 2em auto 3em auto;
+    width: 90vw;
+    margin: 1em auto 3em auto;
+    overflow-x: auto;
 }
 
 .principal__titulo {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    color: var(--laranja)
+    color: var(--preto);
 }
 
-.principal__subtitulo {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--azul);
-    margin: 1.5em 0 1em 0;
-}
-
-.campo__etiqueta {
-    display: block;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 24px;
-    color: var(--azul);
-    margin-left: 0;
-}
-
-.campo__escrita {
-    border: 1px solid var(--azul);
-    border-radius: 24px;
-    padding: 0.5em;
+table.funcionarios {
+    border-collapse: collapse;
     width: 100%;
 }
 
-.formulario__campo {
-    margin: .3em 1.5em .3em 0;
-
+table.funcionarios th,
+table.funcionarios td {
+    background-color: var(-branco);
+    border: 1px solid var(--cor-padrao);
+    padding: 5px;
+    text-align: left;
+    white-space: nowrap;
 }
 
-.formulario__dupla {
-    display: flex;
+table.funcionarios tr:nth-child(even) {
+    background-color: var(--branco);
 }
 
-.formulario__botao {
-    background: var(--laranja);
-    padding: 0.5em 1em;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 10px;
-    border: none;
-    border-radius: 10px;
-    color: var(--branco);
-    cursor: pointer;
-    /* float: right; */
-    text-transform: uppercase;
-    border: 1px solid var(--azul);
-    margin-left: 53%;
-}
-
-.formulario__erro {
-    display: flex;
-    margin-top: .2.5em;
-    align-items: center;
-}
-
-.erro__imagem {
-    width: 12px;
-    height: 12px;
-    margin: 0 .2.5em;
-    background-image: url('../img/warning.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.erro__texto {
-    font-size: 9px;
-    line-height: 14px;
-    color: var(--vermelho);
-}
-
-
-@media screen and (min-width: 1366px) and (min-width: 1728px){
+@media screen and (min-width: 1200px) and (min-width: 1900px) {
 
     .principal {
-        width: 85vw;
+        width: 95vw;
         margin: 6em auto 7em auto;
     }
 
@@ -92,81 +40,12 @@
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
-        color: var(--laranja)
-    }
-
-    .principal__subtitulo {
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 26px;
-        color: var(--azul);
-        margin: 3em 0 2em 0;
-    }
-
-    .campo__etiqueta {
-        display: block;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        color: var(--azul);
-        margin-left: 1em;
-    }
-
-    .campo__escrita {
-        border: 1px solid var(--azul);
-        border-radius: 24px;
-        padding: 1em;
-        width: 100%;
-    }
-
-    .formulario__campo {
-        margin: .6em 3em .6em 0;
-
-    }
-
-    .formulario__dupla {
-        display: flex;
-    }
-
-    .formulario__botao {
-        background: var(--laranja);
-        padding: 1em 2em;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 15px;
-        border: none;
-        border-radius: 10px;
-        color: var(--branco);
-        cursor: pointer;
-        float: right;
-        text-transform: uppercase;
-        border: 1px solid var(--azul);
-    }
-
-    .formulario__erro {
-        display: flex;
-        margin-top: .5em;
-        align-items: center;
-    }
-
-    .erro__imagem {
-        width: 16px;
-        height: 16px;
-        margin: 0 .5em;
-        background-image: url('../img/warning.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .erro__texto {
-        font-size: 12px;
-        line-height: 18px;
-        color: var(--vermelho);
+        color: var(--preto)
     }
 
     .funcionarios,
     .nome_titulo {
-        border: 3px solid var(--azul);
+        border: 3px solid var(--cor-padrao);
         gap: 10px;
         font-size: 15px;
         font-weight: 400;
@@ -175,7 +54,23 @@
     }
 
     .nome_dados {
-        border: 2px solid var(--azul);
+        border: 2px solid var(--cor-padrao);
     }
 
+    table.funcionarios {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table.funcionarios th,
+    table.funcionarios td {
+        border: 1px solid var(--cor-padrao);
+        padding: 5px;
+        text-align: left;
+        background-color: var(--cor-de-fundo);
+    }
+
+    table.funcionarios tr:nth-child(even) {
+        background-color: var(--cor-de-fundo);
+    }
 }

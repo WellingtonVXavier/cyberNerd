@@ -79,6 +79,22 @@
       "senha": "123CARECA",
       "confirmaSenha": "123CARECA",
       "id": 8
+    },
+    {
+      "nome": "WELLINGTON VAZ XAVIER",
+      "dataNascimento": "2023-09-24",
+      "contato": "11919404938",
+      "email": "WELLINGTONVXAVIER@GMAIL.COM",
+      "cep": "03953-120",
+      "endereco": "R: FRUTUOSO NUNES",
+      "numero": "524",
+      "complemento": "apartamento 2806",
+      "bairro": "São Mateus",
+      "cidade": "SÃO PAULO",
+      "uf": "SP",
+      "senha": "Toom153@",
+      "confirmaSenha": "Toom153@",
+      "id": 9
     }
   ]
 }

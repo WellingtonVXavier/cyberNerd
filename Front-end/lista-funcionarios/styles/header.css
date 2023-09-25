@@ -12,7 +12,7 @@
 }
 
 .container__botao:checked~.container__rotulo {
-    background: var(--cor-padrao);
+    background: var(--azul-degrade);
 }
 
 .cabeçalho {
@@ -50,12 +50,12 @@
 }
 
 .lista-menu__titulo {
-    color: var(--preto);
+    color: var(--laranja);
     font-weight: 700;
 }
 
 .lista-menu__link {
-    background: var(--cor-padrao);
+    background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -127,7 +127,7 @@
     }
 
     .opções__botão:checked~.opções__rotulo>.opções__item {
-        background: var(--cor-padrao);
+        background: var(--azul-degrade);
         color: var(--branco);
     }
 
@@ -136,7 +136,7 @@
     }
 
     .lista-menu__item:hover {
-        background: var(--cor-padrao);
+        background: var(--azul-degrade);
     }
 
     .lista-menu__item:hover>.lista-menu__link {
@@ -146,7 +146,7 @@
 
 }
 
-@media screen and (min-width: 1200px) and (min-width: 1728px) {
+@media screen and (min-width: 1728px) {
     .container__link {
         display: flex;
         align-items: center;

@@ -1,17 +1,17 @@
 .banner {
-    background: var(--azul-degrade);
+    background: var(--cor-padrao);
     color: var(--branco);
     text-align: center;
     padding: 1em;
 }
 
 .banner__titulo {
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 700;
 }
 
-@media screen and (min-width: 1728px) {
+@media screen and (min-width: 1200px) and (min-width: 1728px) {
     .banner__titulo {
-        font-size: 36px;
+        font-size: 28px;
     }
 }

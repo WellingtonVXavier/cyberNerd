@@ -7,13 +7,15 @@
 :root {
     --cor-de-fundo: rgb(235, 236, 238);
     --branco: rgb(255, 255, 255);
-    --cor-padrao: rgb(139, 112, 60);
+    --laranja: rgb(139, 112, 60);
+    --azul-degrade: rgb(139, 112, 60);
     --fonte-principal: "Poppins";
+    --azul: rgb(85, 63, 22);
     --fonte-secundario: "Josefin Sans";
     --preto: rgb(0, 0, 0);
     --cinza: rgb(71, 70, 70);
-    --cinza-claro: rgb(133, 133, 133);
-    --vermelho: rgb(241, 28, 0);
+    --cinza-claro: rgb(139, 112, 60);
+    --vermelho: rgb(243, 16, 16);
 }
 
 body {
