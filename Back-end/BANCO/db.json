@@ -1,9 +1,9 @@
 {
   "cadastro": [
     {
-      "nome": "TAINARA RODRIGUES DE OLIVEIRA",
+      "nome": "DIANA PRINCESA",
       "dataNascimento": "2012-12-10",
-      "email": "TAINARAROLIVEIRA@GMAIL.COM",
+      "email": "DIANA@GMAIL.COM",
       "contato": "(11) 94636-4938",
       "cep": "03953-120",
       "endereco": "R: FRUTUOSO NUNES",
@@ -14,10 +14,10 @@
       "uf": "SP",
       "senha": "1234",
       "confirmaSenha": "1234",
-      "id": 2
+      "id": 1
     },
     {
-      "nome": "HULK VAZ DE OLIVEIRA",
+      "nome": "HULK SMASH",
       "dataNascimento": "2012-12-10",
       "contato": "(11) 94636-4938",
       "email": "HULK@GMAIL.COM",
@@ -30,12 +30,12 @@
       "uf": "SP",
       "senha": "12345",
       "confirmaSenha": "12345",
-      "id": 3
+      "id": 2
     },
     {
-      "nome": "WELLINGTON VAZ XAVIER",
+      "nome": "ESCANOR PECADO DO ORGULHO",
       "dataNascimento": "1987-03-28",
-      "email": "WELLINGTONVXAVIER@GMAIL.COM",
+      "email": "ESCANOR@GMAIL.COM",
       "contato": "(11) 91940-4938",
       "cep": "03953-120",
       "endereco": "R: FRUTUOSO NUNES",
@@ -46,13 +46,13 @@
       "uf": "SP",
       "senha": "1234567",
       "confirmaSenha": "1234567",
-      "id": 5
+      "id": 3
     },
     {
-      "nome": "TOM VAZ XAVIER",
+      "nome": "MELIODAS PECADO DO DRAGÃO",
       "dataNascimento": "1987-03-28",
       "contato": "(11) 91940-4938",
-      "email": "TOMVXAVIER@GMAIL.COM",
+      "email": "MELIODAS@GMAIL.COM",
       "cep": "03953-120",
       "endereco": "R: FRUTUOSO NUNES",
       "numero": "27",
@@ -62,10 +62,42 @@
       "uf": "SP",
       "senha": "tom12",
       "confirmaSenha": "tom12",
-      "id": 7
+      "id": 4
     },
     {
-      "nome": "JENNUS SILVA DO NASCIMENTOTO",
+      "nome": "JENNUS O ANDROID",
+      "dataNascimento": "1987-03-28",
+      "contato": "(11) 91940-4938",
+      "email": "JENNUS@GMAIL.COM",
+      "cep": "03953-120",
+      "endereco": "R: FRUTUOSO NUNES",
+      "numero": "27",
+      "complemento": "CASA 2",
+      "bairro": "SÃO MATEUS",
+      "cidade": "SÃO PAULO",
+      "uf": "SP",
+      "senha": "123CARECA",
+      "confirmaSenha": "123CARECA",
+      "id": 5
+    },
+    {
+      "nome": "GOKU KAKAROTO",
+      "dataNascimento": "1987-03-28",
+      "contato": "(11) 91940-4938",
+      "email": "GOKU@GMAIL.COM",
+      "cep": "03953-120",
+      "endereco": "R: FRUTUOSO NUNES",
+      "numero": "27",
+      "complemento": "CASA 2",
+      "bairro": "SÃO MATEUS",
+      "cidade": "SÃO PAULO",
+      "uf": "SP",
+      "senha": "CARECA12",
+      "confirmaSenha": "CARECA12",
+      "id": 6
+    },
+    {
+      "nome": "SAITAMA CARECA",
       "dataNascimento": "1987-03-28",
       "contato": "(11) 91940-4938",
       "email": "SAITAMA@GMAIL.COM",
@@ -76,25 +108,9 @@
       "bairro": "SÃO MATEUS",
       "cidade": "SÃO PAULO",
       "uf": "SP",
-      "senha": "123CARECA",
-      "confirmaSenha": "123CARECA",
-      "id": 8
-    },
-    {
-      "nome": "WELLINGTON VAZ XAVIER",
-      "dataNascimento": "2023-09-24",
-      "contato": "11919404938",
-      "email": "WELLINGTONVXAVIER@GMAIL.COM",
-      "cep": "03953-120",
-      "endereco": "R: FRUTUOSO NUNES",
-      "numero": "524",
-      "complemento": "apartamento 2806",
-      "bairro": "São Mateus",
-      "cidade": "SÃO PAULO",
-      "uf": "SP",
-      "senha": "Toom153@",
-      "confirmaSenha": "Toom153@",
-      "id": 9
+      "senha": "CARECA10CAPA",
+      "confirmaSenha": "CARECA10CAPA",
+      "id": 7
     }
   ]
 }
