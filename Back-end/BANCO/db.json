@@ -65,7 +65,7 @@
       "id": 4
     },
     {
-      "nome": "JENNUS O ANDROID",
+      "nome": "JENNUS ANDROID",
       "dataNascimento": "1987-03-28",
       "contato": "(11) 91940-4938",
       "email": "JENNUS@GMAIL.COM",
@@ -97,7 +97,7 @@
       "id": 6
     },
     {
-      "nome": "SAITAMA CARECA",
+      "nome": "SAITAMA CARECA DE CAPA",
       "dataNascimento": "1987-03-28",
       "contato": "(11) 91940-4938",
       "email": "SAITAMA@GMAIL.COM",
@@ -108,9 +108,57 @@
       "bairro": "SÃO MATEUS",
       "cidade": "SÃO PAULO",
       "uf": "SP",
-      "senha": "CARECA10CAPA",
-      "confirmaSenha": "CARECA10CAPA",
+      "senha": "CARECA12",
+      "confirmaSenha": "CARECA12",
       "id": 7
+    },
+    {
+      "nome": "URYU YICHIDA",
+      "dataNascimento": "1987-03-28",
+      "contato": "(11) 91940-4938",
+      "email": "URYU@GMAIL.COM",
+      "cep": "03953-120",
+      "endereco": "R: FRUTUOSO NUNES",
+      "numero": "27",
+      "complemento": "CASA 2",
+      "bairro": "SÃO MATEUS",
+      "cidade": "SÃO PAULO",
+      "uf": "SP",
+      "senha": "YICHIDA123",
+      "confirmaSenha": "YICHIDA123",
+      "id": 8
+    },
+    {
+      "nome": "KENPACHI ZARAKI",
+      "dataNascimento": "1987-03-28",
+      "contato": "(11) 91940-4938",
+      "email": "KENPACHI@GMAIL.COM",
+      "cep": "03953-120",
+      "endereco": "R: FRUTUOSO NUNES",
+      "numero": "27",
+      "complemento": "CASA 2",
+      "bairro": "SÃO MATEUS",
+      "cidade": "SÃO PAULO",
+      "uf": "SP",
+      "senha": "123KENPACHI",
+      "confirmaSenha": "123KENPACHI",
+      "id": 9
+    },
+    {
+      "nome": "WELLINGTON VAZ XAVIER",
+      "dataNascimento": "1987-03-28",
+      "contato": "(11) 91940-4938",
+      "email": "VAZ@GMAIL.COM",
+      "cep": "03953-120",
+      "endereco": "R: FRUTUOSO NUNES",
+      "numero": "27",
+      "complemento": "CASA 2",
+      "bairro": "SÃO MATEUS",
+      "cidade": "SÃO PAULO",
+      "uf": "SP",
+      "senha": "123VAZ",
+      "confirmaSenha": "123VAZ",
+      "id": 10
     }
   ]
 }

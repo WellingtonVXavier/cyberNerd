@@ -9,9 +9,9 @@
     --branco: rgb(255, 255, 255);
     --laranja: rgb(139, 112, 60);
     --azul-degrade: rgb(139, 112, 60);
-    --fonte-principal: "Poppins";
     --azul: rgb(85, 63, 22);
-    --fonte-secundario: "Josefin Sans";
+    --fonte-principal: "mulish";
+    --fonte-secundario: "Poppins";
     --preto: rgb(0, 0, 0);
     --cinza: rgb(71, 70, 70);
     --cinza-claro: rgb(139, 112, 60);

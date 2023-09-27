@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Front-end/Login/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="../../Front-end/Login/styles/login.css">
+    <link rel="stylesheet" href="./styles/rodape.css">
     <!-- Font-Mulish -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="/Front-end/core/jquery.js"></script>
+
     <title>Login</title>
 </head>
 
@@ -19,15 +22,17 @@
     <html>
     <!-- Modal Login -->
     <p class="container_titulo">
-        Esfiharia Gemeos
+        Esfiharia Gêmeos
     </p>
 
+    <!-- Titulo Login -->
     <div class="descricao_titulo">
         <h2 class="titulo_login">
             Login
         </h2>
     </div>
 
+    <!-- Login -->
     <section class="CardLogin">
         <div class="login">
             <div class="input">
@@ -39,10 +44,10 @@
                 </div>
 
                 <div class="botoes">
-                    <button class="input-submit entrar" id="entrar">Entrar</button>
+                    <button class="input-submit entrar" id="entrar" onclick="logar()">Entrar</button>
 
                     <button class="input-submit">
-                        <a href="../lista-funcionarios/cadastro-funcionario.html">
+                        <a href="../cadastrar-funcionarios/cadastro-funcionario.html">
                             Cadastro
                         </a>
                     </button>
@@ -89,6 +94,30 @@
             </button>
         </div>
     </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <P class="nome-loja">
+            Esfiharia Gêmeos
+        </P>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">
+                EDUCAÇÃO
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">
+                CONTATO ONLINE
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">
+                COMUNIDADE
+            </li>
+        </ul>
+    </footer>
 
     <script src="./login.js"></script>
     <script src="../../Back-end/BANCO/db.json"></script>

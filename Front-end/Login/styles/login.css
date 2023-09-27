@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(196, 172, 129);
+  background-color: var(--cor-padrao);
 }
 
 .container_titulo {

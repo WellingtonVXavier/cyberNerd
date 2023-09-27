@@ -1,13 +1,10 @@
-@import url("banner.css");
-@import url("cadastro.css");
-@import url("formulario.css");
-@import url("header.css");
-@import url("rodape.css");
+@import url("styles/login.css");
+@import url("styles/rodape.css");
 
 :root {
     --cor-de-fundo: rgb(235, 236, 238);
     --branco: rgb(255, 255, 255);
-    --cor-padrao: rgb(139, 112, 60);
+    --cor-padrao: rgb(196, 172, 129);
     --fonte-principal: "mulish";
     --fonte-secundario: "Poppins";
     --preto: rgb(0, 0, 0);
@@ -17,8 +14,8 @@
 }
 
 body {
-    background-color: var(--branco);
-    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte--principal);
     font-size: 16px;
     font-weight: 400;
 }

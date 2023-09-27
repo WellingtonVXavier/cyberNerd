@@ -1,5 +1,4 @@
-$(".entrar").on("click", () => {
-
+function logar(){
     try {
         const usuario = $("#usuario").val().toUpperCase();
         const senha = $("#senha").val();
@@ -24,8 +23,8 @@ $(".entrar").on("click", () => {
                 if (!usuarioEncontrado) {
                     $("#cardModal").find("p").text("Usuário não cadastrado!");
                     $("#cardModal").show();
-                } else if (usuarioEncontrado.senha !== senha) {
-                    $("#cardModal").find("p").text("Senha inválida!");
+                } else if (usuarioEncontrado.usuario != usuario && usuarioEncontrado.senha !== senha) {
+                    $("#cardModal").find("p").text("Usuário ou Senha inválido!");
                     $("#cardModal").show();
                 } else {
                     window.location.href = "../TelaPrincipal/TelaInicial.html";
@@ -40,4 +39,4 @@ $(".entrar").on("click", () => {
     } catch (error) {
         console.log("error", error)
     }
-})
+}

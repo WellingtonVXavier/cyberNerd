@@ -1,10 +1,14 @@
-hr {
-    margin: 0;
+.rodape {
+    margin-top: 330px;
+    background-color: var(--cor-padrao);
+    padding: 0.5em;
 }
 
-.rodape {
-    background-color: var(--branco);
-    padding: 0.5em;
+.nome-loja {
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
 }
 
 .lista-rodape {
@@ -21,21 +25,10 @@ hr {
         display: block;
     }
 
-    .lista-rodape__item {
-        display: flex;
-        align-items: center;
-        margin: 0.6em 0;
-    }
-
-    .lista-rodape__link {
-        color: var(--cinza);
-        text-decoration: none;
-        margin-left: 0.6em;
-    }
-
     .lista-rodape__titulo {
-        font-size: 12px;
-        color: var(--cor-padrao);
+        font-size: 15px;
+        color: var(--preto);
+        font-family: var(--fonte-principal);
     }
 
     .rodape__titulo {
@@ -45,7 +38,7 @@ hr {
 
 @media screen and (min-width: 1366px) and (max-width: 1728px) {
     .lista-rodape {
-        border-left: 1px solid var(--cor-padrao);
+        border-left: 1px solid var(--preto);
         padding-left: 1em;
     }
 
@@ -57,7 +50,6 @@ hr {
         color: var(--preto);
         font-size: 20px;
         font-weight: 400;
-        font-family: var(--fonte-secundario);
+        font-family: var(--fonte-principal);
     }
-
 }
