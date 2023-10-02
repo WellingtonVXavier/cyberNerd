@@ -1,21 +1,20 @@
-
 const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 10,
+    speed: 500,
+    spaceBetween: 20,
     slidesPerView: 3,
     pagination: {
         el: '.swiper-pagination',
-        type: 'bullets',
+        clickble: true,
     }
 });
 
 function carregarNomeUsuario() {
-
+    
     fetch("http://localhost:3000/cadastro")
         .then(response => response.json())
         .then(cadastros => {
 
-            const usuarioLogado = cadastros[1].nome;
+            const usuarioLogado =  cadastros[1].nome;
             console.log(usuarioLogado);
 
 

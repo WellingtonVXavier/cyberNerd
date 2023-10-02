@@ -1,0 +1,111 @@
+.card {
+    display: inline-block;
+    align-items: center;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: var(--cor-de-fundo);
+    width: 20px;
+    height: 320px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px var(--cinza-claro);
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.card img {
+    width: 250px;
+    border-radius: 12px 12px 0 0;
+}
+
+.card h1 {
+    font-size: 10px;
+}
+
+.card h2 {
+    font-size: 12px;
+    color: var(--cinza);
+}
+
+.card button {
+    background-color: var(--cor-padrao);
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 50%;
+    color: var(--branco);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+@media screen and (min-width: 1920px) and (max-width: 3000px) {
+
+    .card {
+        display: inline-block;
+        margin: 20px;
+        margin-top: 30px;
+        background-color: var(--cor-de-fundo);
+        width: 250px !important;
+        height: 320px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 12px var(--cinza-claro);
+    }
+
+    .card div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        height: 50%;
+    }
+
+    .card img {
+        width: 250px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .card h1 {
+        font-size: 1.2rem;
+    }
+
+    .card h2 {
+        font-size: .9rem;
+        color: var(--cinza);
+    }
+
+    .card button {
+        background-color: var(--cor-padrao);
+        height: 30px;
+        border: none;
+        padding: 4px;
+        width: 50%;
+        color: var(--branco);
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 12px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 350px;
+    }
+
+    .swiper-slide img {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        position: initial;
+        margin: 0.5em 0;
+    }
+}

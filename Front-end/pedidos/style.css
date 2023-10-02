@@ -1,0 +1,18 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+:root {
+    --cor-de-fundo: rgb(196, 172, 129);
+    --branco: rgb(255, 255, 255);
+    --cor-padrao: rgb(139, 112, 60);
+    --fonte-principal: "Mulish";
+    --fonte-secundario: "Poppins";
+    --preto: rgb(0, 0, 0);
+    --cinza: rgb(71, 70, 70);
+    --cinza-claro: rgb(133, 133, 133);
+    --vermelho: rgb(241, 28, 0);
+}
